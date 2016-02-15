@@ -1,0 +1,2 @@
+module DogCareHelper
+end

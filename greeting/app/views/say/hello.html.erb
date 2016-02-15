@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<h1>HELLO from Rails</h1>
+
+<p>It is now <%= @current_time.stamp('March 1, 1999') %></p>
+
+<%= 'I am a string' %>
+<% if true %>
+  <h3>Hi</h3>
+<% end %>
+
+<% #I am a comment %>
+
+<p><a href="Normal HTML link"></a></p>
+
+<!-- how to do links in ror -
+link_to is a rails helper;
+in "" put the text you want to show on webpage
+add comma
+get path by calling rake routes at command line
+-->
+<p><%= link_to "Say Goodbye!", say_goodbye_path %></p>
+</body>
+</html>
+
