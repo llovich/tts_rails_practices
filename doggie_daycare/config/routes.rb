@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :dogs, only:[:index]
+
   get 'dog_care/index'
 
   get '/about' => 'dog_care#about'

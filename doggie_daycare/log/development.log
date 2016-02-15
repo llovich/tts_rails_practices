@@ -1398,3 +1398,42 @@ Migrating to CreateDogs (20160215150302)
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "dogs" ("name", "breed", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stella"], ["breed", "Pointer mix"], ["age", 10], ["created_at", "2016-02-15 15:16:30.471158"], ["updated_at", "2016-02-15 15:16:30.471158"]]
   [1m[35m (16.4ms)[0m  commit transaction
   [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-15 09:58:06 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1158ms (Views: 1145.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dogs" for 127.0.0.1 at 2016-02-15 09:58:14 -0600
+Processing by DogsController#index as HTML
+  Rendered dogs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dogs" for 127.0.0.1 at 2016-02-15 10:14:08 -0600
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (0.3ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dogs" for 127.0.0.1 at 2016-02-15 10:14:44 -0600
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-15 10:22:03 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2016-02-15 10:22:05 -0600
+Processing by DogCareController#about as HTML
+  Rendered dog_care/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
