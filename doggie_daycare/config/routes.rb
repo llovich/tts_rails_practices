@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'dog_care/index'
 
-  get 'dog_care/about'
+  get '/about' => 'dog_care#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

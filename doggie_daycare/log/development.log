@@ -1015,3 +1015,293 @@ Started GET "/dog_care/about.html" for ::1 at 2016-02-14 21:11:57 -0600
 Processing by DogCareController#about as HTML
   Rendered dog_care/about.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:26:42 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 418ms (Views: 399.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:36:09 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dog_care.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/assets/dog_care.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 08:36:09 -0600
+
+
+Started GET "/dog_care/about.html" for ::1 at 2016-02-15 08:36:11 -0600
+Processing by DogCareController#about as HTML
+  Rendered dog_care/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dog_care/about.html" for ::1 at 2016-02-15 08:36:46 -0600
+Processing by DogCareController#about as HTML
+  Rendered dog_care/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dog_care.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/assets/dog_care.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 08:36:46 -0600
+
+
+Started GET "/dog_care/about.html" for ::1 at 2016-02-15 08:39:17 -0600
+Processing by DogCareController#about as HTML
+  Rendered dog_care/about.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+      <%= link_to "about", about_path =>
+       ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+        <a class="btn btn-info" href="...
+         ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...   <a class="btn btn-info" href="/dog_care/index.html" role=...
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ref="/dog_care/index.html" role="button">Home page</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...x.html" role="button">Home page</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: unknown regexp options - dg
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...="btn btn-info" href="/dog_care/about.html" role="button">Ab...
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting ')'
+...fo" href="/dog_care/about.html" role="button">About Us</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...g_care/about.html" role="button">About Us</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: unterminated string meets end of file
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:18: unknown regexp options - dg
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:18: unterminated string meets end of file
+  app/views/layouts/application.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.9ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (116.6ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (204.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:40:29 -0600
+
+SyntaxError (/Users/cupcake3/tts/rails_practices/doggie_daycare/config/routes.rb:4: syntax error, unexpected '=', expecting keyword_end
+  get '/about' = 'dog_care#about'
+                ^):
+  config/routes.rb:4: syntax error, unexpected '=', expecting keyword_end
+
+
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:41:10 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+      <%= link_to "about", about_path =>
+       ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+        <a class="btn btn-info" href="...
+         ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...   <a class="btn btn-info" href="/dog_care/index.html" role=...
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ref="/dog_care/index.html" role="button">Home page</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...x.html" role="button">Home page</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: unknown regexp options - dg
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...="btn btn-info" href="/dog_care/about.html" role="button">Ab...
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting ')'
+...fo" href="/dog_care/about.html" role="button">About Us</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...g_care/about.html" role="button">About Us</a>
+...                               ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: unterminated string meets end of file
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:18: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:18: unknown regexp options - dg
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/layouts/application.html.erb:18: unterminated string meets end of file
+  app/views/layouts/application.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.5ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:41:49 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+      <%= link_to "about", about_path =>
+       ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:20: unknown regexp options - dv
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+<%= yield );@output_buffer.safe_append='
+ ^
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/cupcake3/tts/rails_practices/doggie_daycare/app/views/layouts/application.html.erb:31: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:20: unknown regexp options - dv
+  app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cupcake3/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:42:37 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dog_care.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-15 08:42:37 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-15 08:42:37 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-15 08:42:38 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-15 08:42:38 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-15 08:42:38 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 08:42:38 -0600
+
+
+Started GET "/assets/dog_care.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-15 08:42:38 -0600
+
+
+Started GET "/" for ::1 at 2016-02-15 08:42:43 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-02-15 08:42:45 -0600
+Processing by DogCareController#about as HTML
+  Rendered dog_care/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-15 08:42:46 -0600
+Processing by DogCareController#index as HTML
+  Rendered dog_care/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 29.1ms | ActiveRecord: 0.0ms)
