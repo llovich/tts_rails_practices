@@ -2,7 +2,7 @@
   <div class="col-sm-2"></div>
     <div class="col-sm-8">
       <h1>My Dogs</h1>
-
+      <%= link_to "Add a new dog", new_dog_path %>
       <table>
         <thead>
           <tr>
@@ -10,15 +10,19 @@
             <th>Name</th>
             <th>Breed</th>
             <th>Age</th>
+            <th colspan="2"></th>
           </tr>
         </thead>
         <tbody>
         <% @dogs.each do |dog| %>
           <tr>
             <td><%= dog.id %></td>
-            <td><%= dog.name %></td>
+            <!-- dog_path comes from looking at routes, get prefix and add _path;  dog in () will 'know' to get the id of the dog -->
+            <td><%= link_to dog.name,  dog_path(dog) %></td>
             <td><%= dog.breed %></td>
             <td><%= dog.age %></td>
+            <td><%= link_to "edit", edit_dog_path(dog) %></td>
+            <td><%= link_to "Delete", dog, method: :delete, data: { confirm: "Are you sure?"} %></td>
           </tr>
         <% end %>
       </tbody>
