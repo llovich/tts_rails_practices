@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>French Pastry Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2"></div>
+       <div class="col-sm-8">
+       <div style="margin-top:10px;">
+          <%= link_to fa_icon("home", text:"Posts"), root_path, class:"btn btn-info" %>
+          <%= link_to "About Gaston Lenôtre", about_path, class:"btn btn-info" %>
+
+          <%= yield %>
+        </div>
+       </div>
+       <div class="col-sm-2"></div>
+    </div>
+  </div>
+</body>
+</html>

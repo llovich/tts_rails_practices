@@ -1,0 +1,15 @@
+<%= form_for @blog do |blog_fields|%>
+<div class="form-group">
+  <%= blog_fields.label :title %>
+  <%= blog_fields.text_field :title, class: "form-control"%>
+</div>
+<div class="form-group">
+  <%= blog_fields.label :content %>
+  <%= blog_fields.text_area :content, class: "form-control"%>
+</div>
+<div class="form-group">
+  <%= blog_fields.label :author %>
+  <%= blog_fields.text_field :author, class: "form-control"%>
+</div>
+     <%= blog_fields.submit class: "btn btn-info" %>
+<% end %>

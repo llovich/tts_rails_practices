@@ -1,0 +1,22 @@
+<h1>List of Cats and their Address</h1>
+
+   <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @addresses.each do |cat| %>
+          <tr>
+            <td><%= cat.name %></td>
+            <td><%= cat.address %></td>
+          </tr>
+        <% end %>
+      </tbody>
+
+    </table>
+
+
+

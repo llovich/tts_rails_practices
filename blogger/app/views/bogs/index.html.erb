@@ -1,0 +1,20 @@
+<h1 class="text-danger">The Art of French Pastry</h1>
+
+ <% @blogs.each do |blog| %>
+    <div class="well">
+    <h3 class="text-danger"><%= blog.title %></h3>
+    <p><em>By <%= blog.author %></em></p>
+    <p><%= blog.content %></p>
+    <table>
+      <td><%= link_to fa_icon('pencil', text: "edit"), edit_bog_path(blog) %></td>
+      <td style="width:40px;"></td>
+      <td><%= link_to fa_icon('trash', text: "delete"), blog, method: :delete, data: { confirm: "Are you sure?"} %></td>
+      <td style="width:200px;"></td>
+      <td><em>Created on: <%= blog.created_at.stamp('June 18th') %></em></td>
+    </table>
+    <br></div>
+<% end %>
+
+<%= link_to fa_icon('plus', text: "Add a new blog"), new_bog_path, class:"btn btn-info" %>
+<br><br>
+
