@@ -6659,3 +6659,41 @@ Processing by DogsController#show as HTML
   [1m[35mDog Load (0.1ms)[0m  SELECT  "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT 1  [["id", 1]]
   Rendered dogs/show.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOwners (20160217143323)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160217143323"]]
+  [1m[36m (27.7ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveOwnerFromDogs (20160217143523)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TEMPORARY TABLE "adogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "age" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "owner" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "dogs"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "adogs" ("id","name","breed","age","created_at","updated_at","owner") VALUES (1, 'Harry', 'Jack Russell Terrier', 4, '2016-02-15 15:15:14.821679', '2016-02-16 16:42:29.425769', 'Sia')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "adogs" ("id","name","breed","age","created_at","updated_at","owner") VALUES (2, 'Stella', 'Pointer mix', 10, '2016-02-15 15:16:30.471158', '2016-02-16 16:09:22.820071', 'Lillian')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "adogs" ("id","name","breed","age","created_at","updated_at","owner") VALUES (5, 'Sam', 'lab', 10, '2016-02-16 16:09:15.029570', '2016-02-16 16:09:15.029570', 'David')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "dogs"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "dogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "breed" varchar, "age" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "adogs"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "dogs" ("id","name","breed","age","created_at","updated_at") VALUES (1, 'Harry', 'Jack Russell Terrier', 4, '2016-02-15 15:15:14.821679', '2016-02-16 16:42:29.425769')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "dogs" ("id","name","breed","age","created_at","updated_at") VALUES (2, 'Stella', 'Pointer mix', 10, '2016-02-15 15:16:30.471158', '2016-02-16 16:09:22.820071')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "dogs" ("id","name","breed","age","created_at","updated_at") VALUES (5, 'Sam', 'lab', 10, '2016-02-16 16:09:15.029570', '2016-02-16 16:09:15.029570')[0m
+  [1m[35m (1.1ms)[0m  DROP TABLE "adogs"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160217143523"]]
+  [1m[35m (12.6ms)[0m  commit transaction
+Migrating to AddOwnerIdToDogs (20160217143740)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "dogs" ADD "owner_id" integer
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_dogs_on_owner_id" ON "dogs" ("owner_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160217143740"]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_dogs_on_owner_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_dogs_on_owner_id' AND type='index'
+
