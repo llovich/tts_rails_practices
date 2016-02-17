@@ -50,7 +50,7 @@ class DogsController < ApplicationController
     #important - white listed params - set only the ones you want to save
     #also security/blocks users from injecting nefarious data into db
     def dog_params
-    params.require(:dog).permit(:name, :breed, :age, :owner)
+    params.require(:dog).permit(:name, :breed, :age, :owner_id)
   end
 end
 
