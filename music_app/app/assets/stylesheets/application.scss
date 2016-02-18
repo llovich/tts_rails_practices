@@ -1,0 +1,14 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+   background-image: image-url('bkgd_triangle.jpg');
+}
+
+.main_box {
+  background-color:#ffffff;
+  margin-top:55px;
+  padding:30px;
+  border-radius:10px;
+}

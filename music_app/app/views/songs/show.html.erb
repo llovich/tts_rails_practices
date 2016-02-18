@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+<p>
+  <strong>Title:</strong>
+  <%= @song.title %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @song.artist.try(:name) %>
+</p>
+</div>
+
+<%= link_to fa_icon('pencil', text: "edit"), edit_song_path(@song) %> |
+<%= link_to fa_icon('list', text: "full list"), songs_path %> |
+<%= link_to fa_icon('plus', text: "add another"), new_song_path %>

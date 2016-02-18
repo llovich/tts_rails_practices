@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="bg-warning">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 bg-default main_box">
+      <p class="text-right">
+        <%= link_to "Genres", genres_path, class:"btn btn-danger" %>
+        <%= link_to "Artists", artists_path, class:"btn btn-info" %>
+        <%= link_to "Songs", songs_path, class:"btn btn-success" %>
+      </p>
+
+      <%= yield %>
+
+      </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+</body>
+</html>

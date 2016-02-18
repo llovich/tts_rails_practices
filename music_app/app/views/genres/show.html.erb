@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+  <strong>Name:</strong>
+  <%= @genre.name %>
+</div>
+
+<%= link_to fa_icon('pencil', text: "edit"), edit_genre_path(@genre) %> |
+<%= link_to fa_icon('list', text: "full list"), genres_path %> |
+<%= link_to fa_icon('plus', text: "add another"), new_genre_path %>

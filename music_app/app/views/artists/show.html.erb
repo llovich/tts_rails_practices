@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<div class="well">
+<p>
+  <strong>Name:</strong>
+  <%= @artist.name %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @artist.genre.try(:name) %>
+</p>
+</div>
+
+
+<%= link_to fa_icon('pencil', text: "edit"), edit_artist_path(@artist) %> |
+<%= link_to fa_icon('list', text: "full list"), artists_path %> |
+<%= link_to fa_icon('plus', text: "add another"), new_artist_path %>
+
+
