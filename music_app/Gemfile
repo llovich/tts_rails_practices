@@ -39,7 +39,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-   gem 'pry-byebug'
+  gem 'pry-byebug'
   gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
 end
 
@@ -52,5 +52,7 @@ group :development do
    #ADDING DEV GEMS HERE
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'annotate', '~> 2.6.6'
+
 end
 

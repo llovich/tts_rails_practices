@@ -10,6 +10,12 @@
   <strong>Genre:</strong>
   <%= @artist.genre.try(:name) %>
 </p>
+
+<p>
+  <strong>Songs:</strong>
+  <%= @artist.songs.ordef('name') %>
+</p>
+
 </div>
 
 
