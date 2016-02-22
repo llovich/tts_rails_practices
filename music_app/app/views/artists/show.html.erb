@@ -11,10 +11,13 @@
   <%= @artist.genre.try(:name) %>
 </p>
 
-<p>
-  <strong>Songs:</strong>
-  <%= @artist.songs.ordef('name') %>
-</p>
+
+<p><strong>Songs by <%= @artist.name %></strong></p>
+<ul>
+  <% @artist.songs.each do |song| %>
+    <li><%= link_to song.title, song_path(song) %></li>
+  <% end %>
+</ul>
 
 </div>
 
