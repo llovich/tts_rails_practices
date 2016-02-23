@@ -5,12 +5,12 @@
   <%= dog_fields.text_field :name, class: "form-control"%>
 </div>
 <div class="form-group">
-  <%= dog_fields.label :breed  %>
-  <%= dog_fields.text_field :breed, class: "form-control" %>
-</div>
-<div class="form-group">
   <%= dog_fields.label :age  %>
   <%= dog_fields.number_field :age, class: "form-control"%>
+</div>
+<div class="form-group">
+  <%= dog_fields.label :breed_id  %>
+  <%= dog_fields.collection_select :breed_id, Breed.all, :id, :name, {prompt: "Select breed"}, {class: "form-control"} %>
 </div>
 <div class="form-group">
   <%= dog_fields.label :owner_id  %>

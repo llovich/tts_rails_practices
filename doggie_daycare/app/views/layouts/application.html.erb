@@ -8,15 +8,30 @@
 </head>
 <body>
  <div class="container">
-    <%= link_to fa_icon("home", text:"Home"), root_path %>
+ <div class="row" style="margin-top:18px; margin-bottom:20px;">
+  <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+    <%= link_to fa_icon("home", text:"Home"), root_path, class:"btn btn-success" %>
 
-    <%= link_to "About", about_path %>
+    <%= link_to "About", about_path, class:"btn btn-success" %>
 
-    <%= link_to "Dogs", dogs_path %>
+    <%= link_to "Dogs", dogs_path, class:"btn btn-success" %>
 
-     <%= link_to "Owners", owners_path %>
+     <%= link_to "Owners", owners_path, class:"btn btn-success" %>
+     </div>
+      <div class="col-sm-2"></div>
+</div>
+
+  <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8" style="background-color:honeydew; padding:50px; border-radius:20px;">
 
 <%= yield %>
+    </div>
+      <div class="col-sm-2"></div>
+    </div>
 
  </div>
 

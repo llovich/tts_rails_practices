@@ -19,9 +19,10 @@ class DogsController < ApplicationController
     @dog = Dog.find(params[:id])
 
     if @dog.update(dog_params)
-      redirect_to dog_url(@dog), notice: "Dog updated!"
+      flash[:notice] = "Dog updated!"
+      redirect_to dog_url(@dog)
     else
-      flash.now[:notice] = "Could not update dog :("
+      flash.now[:alert] = "Could not update dog :("
       render :edit
     end
   end
@@ -50,7 +51,7 @@ class DogsController < ApplicationController
     #important - white listed params - set only the ones you want to save
     #also security/blocks users from injecting nefarious data into db
     def dog_params
-    params.require(:dog).permit(:name, :breed, :age, :owner_id)
+    params.require(:dog).permit(:name, :breed_id, :age, :owner_id)
   end
 end
 

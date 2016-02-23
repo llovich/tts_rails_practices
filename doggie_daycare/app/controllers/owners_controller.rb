@@ -10,6 +10,7 @@ class OwnersController < ApplicationController
   # GET /owners/1
   # GET /owners/1.json
   def show
+    @dogs = @owner.dogs
   end
 
   # GET /owners/new
