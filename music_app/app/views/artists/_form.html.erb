@@ -20,6 +20,10 @@
     <%= f.label :genre_id %><br>
     <%= f.collection_select :genre_id, Genre.all, :id, :name, {prompt:"Select a genre"} %>
   </div>
+  <div class="form-group">
+  <%= f.label :bio %>
+  <%= f.text_area :bio, class: "form-control"%>
+</div>
   <div class="actions form-group">
     <%= f.submit class:"btn btn-default"%>
   </div>

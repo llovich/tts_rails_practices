@@ -14,13 +14,14 @@ namespace :db do
       Artist.populate(5) do |artist|
         artist.name = Faker::App.name
         artist.genre_id = genre.id
+        artist.bio = Faker::Hipster.paragraphs(1)
 
       #Create varied number of songs per artist
       Song.populate(8..16) do |song|
         song.title = Faker::Hipster.words(3).join(' ')
         song.artist_id = artist.id
       end
-      end
+    end
     end
     puts "done"
   end
