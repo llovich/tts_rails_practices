@@ -5,6 +5,7 @@ class OwnersController < ApplicationController
   # GET /owners.json
   def index
     @owners = Owner.all
+    @order_owners = Owner.order(:name)
   end
 
   # GET /owners/1

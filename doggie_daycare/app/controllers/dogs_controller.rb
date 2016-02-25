@@ -5,6 +5,7 @@ class DogsController < ApplicationController
 
   def index
     @dogs = Dog.all
+    @order_dogs = Dog.order(:name)
   end
 
   def new
